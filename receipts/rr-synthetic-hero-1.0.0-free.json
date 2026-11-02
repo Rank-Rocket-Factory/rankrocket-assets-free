@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "asset_id": "rr-synthetic-hero",
+  "version": "1.0.0",
+  "channel": "free",
+  "actor": "ramandeep171",
+  "source_commit": "9e345f1c47ee2f4eae617a0efa51bd4139aec408",
+  "manifest_sha256": "adbdcf58eb0b25fe8b229133b0da82cd746d95fe9d6dc7c0f1a80ffb460dd051",
+  "package_sha256": "fe10ea8044ff50ca2e376ad318c6da06adb212982c11f1fccef6451a2c4a4efd",
+  "created_at": "2026-11-02T13:53:28.537384+00:00"
+}
