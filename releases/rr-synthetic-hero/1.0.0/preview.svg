@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">Synthetic Rank Rocket hero preview</title>
+  <desc id="desc">A purple gradient panel with an abstract rocket and synthetic copy.</desc>
+  <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#24104f"/><stop offset="1" stop-color="#7138d8"/></linearGradient></defs>
+  <rect width="800" height="450" rx="28" fill="url(#g)"/>
+  <circle cx="655" cy="100" r="115" fill="#fff" opacity=".08"/>
+  <path d="M620 286c70-25 98-86 99-147-61 2-122 30-147 100l48 47z" fill="#f6f1ff"/>
+  <circle cx="665" cy="194" r="21" fill="#7138d8"/>
+  <path d="M589 273l-35 48 55-16m27-3-16 55 48-35" fill="#ffcc67"/>
+  <text x="70" y="150" fill="#fff" font-family="Arial,sans-serif" font-size="46" font-weight="700">Launch clearer.</text>
+  <text x="70" y="205" fill="#fff" font-family="Arial,sans-serif" font-size="46" font-weight="700">Grow smarter.</text>
+  <text x="70" y="260" fill="#e8ddff" font-family="Arial,sans-serif" font-size="20">Synthetic fixture — not a commercial claim.</text>
+</svg>

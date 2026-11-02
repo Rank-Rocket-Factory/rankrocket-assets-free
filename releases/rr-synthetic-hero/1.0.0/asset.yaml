@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "asset_id": "rr-synthetic-hero",
+  "title": "Synthetic Hero Template",
+  "version": "1.0.0",
+  "category": "websites-landing-pages",
+  "description": "A safe synthetic landing-page hero used to validate packaging, indexing, and release controls.",
+  "tags": ["landing-page", "synthetic", "validation"],
+  "channels": ["free", "premium"],
+  "source": {
+    "provenance": "synthetic",
+    "author": "SP Nexgen Automind",
+    "repository_path": "assets/01-websites-landing-pages/synthetic-hero-template",
+    "upstream_url": null
+  },
+  "preview": "preview.svg",
+  "documentation": "README.md",
+  "license": {"id": "RRAF-SYNTHETIC-1.0", "file": "LICENSE.md"},
+  "rights": {"status": "approved", "evidence": "RIGHTS.md"},
+  "qa": {"status": "approved", "reviewer": "SP-Codex-Arjun-01", "reviewed_at": "2026-11-02T00:00:00+05:30"},
+  "files": [
+    {"path": "LICENSE.md", "sha256": "6d93cbb4cd7a5a3243a03c98185323645670fa278da625fccab181ed7068c0cc"},
+    {"path": "preview.svg", "sha256": "9cad4dac1720aaea8d5c07b98bb4f47d69f439e957ff109f0630f1124090482e"},
+    {"path": "README.md", "sha256": "8f27c10028f173daca3c728c3d19ca92e6f77700a92ebf8da706a9d4bf26a3da"},
+    {"path": "RIGHTS.md", "sha256": "d8bd5bafb5dd80ae20989b1af0dc11e8ec46bbfdb1f453b4f027b907dfe7e0d9"},
+    {"path": "source/index.html", "sha256": "b131b6dbe9ea28fdd9e3e0d04a109285cb206a38d8648faa0e5a95c327b50339"}
+  ]
+}
