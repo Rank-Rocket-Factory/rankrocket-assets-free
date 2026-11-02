@@ -1,0 +1,33 @@
+name: Release integrity
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Validate immutable release packages
+        shell: python
+        run: |
+          import json
+          from pathlib import Path
+          forbidden={".exe",".dll",".msi",".bat",".cmd",".ps1",".pfx",".p12",".key",".pem"}
+          for p in Path("releases").rglob("*") if Path("releases").exists() else []:
+              if p.is_file() and p.suffix.lower() in forbidden:
+                  raise SystemExit(f"forbidden release file: {p}")
+          for p in Path("receipts").glob("*.json") if Path("receipts").exists() else []:
+              r=json.loads(p.read_text())
+              required={"schema_version","asset_id","version","channel","actor","source_commit","manifest_sha256","package_sha256","created_at"}
+              if set(r)!=required or r["channel"] not in {"free","premium"}:
+                  raise SystemExit(f"invalid receipt: {p}")
+              release=Path("releases")/r["asset_id"]/r["version"]/"asset.yaml"
+              if not release.is_file():
+                  raise SystemExit(f"missing release manifest for {p}")
+              json.loads(release.read_text())
+          print("release integrity PASS")
